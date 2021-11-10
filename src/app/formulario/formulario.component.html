@@ -1,0 +1,16 @@
+<h3>Welcome brother</h3>
+<p>Usuarios registrados:{{ countUser }}</p>
+<form [formGroup]="formulario" (submit)="onSubmit()">
+  <label> Nombre: </label>
+  <input type="text" formControlName="nombre" />
+
+  <label> Apellido: </label>
+  <input type="text" formControlName="apellido" />
+
+  <label> empresa: </label>
+  <input type="text" formControlName="empresa" />
+
+  <label> telefono: </label>
+  <input type="text" formControlName="telefono" />
+  <input type="submit" style="background:green" value="guardar" />
+</form>
